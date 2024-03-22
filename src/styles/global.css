@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply text-white bg-[#27272A]
+}
+
+.bgButton {
+  @apply bg-gradient-to-r from-[#F95537] to-[#FC2D39]
+}
