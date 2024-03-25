@@ -52,7 +52,7 @@ export function App() {
           </div>
 
         </div>
-        <h1 className="text-2xl border-b-2 border-pokemon px-2 mt-24">
+        <h1 className="text-2xl border-b-2 border-pokemon px-2 mt-10">
           Lugares
         </h1>
       </div>
