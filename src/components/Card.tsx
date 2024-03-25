@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { toast } from "react-toastify";
 
 interface CardProps {
   name: string;
@@ -6,6 +7,15 @@ interface CardProps {
 
 export function Card({ name }: CardProps) {
   const [isAvailable, setIsAvailable] = useState(true)
+
+  function handleVisitPokemonCity(cityName: string) {
+    if(isAvailable) {
+      setIsAvailable(false)
+      toast.success(`Você visitou ${cityName}`)
+    } else {
+      toast.error(`Você já visitou ${cityName}`)
+    }
+  }
 
   return (
     <div 
@@ -18,8 +28,7 @@ export function Card({ name }: CardProps) {
       <div className="h-full w-full flex text-center items-center justify-between gap-2">
         <h1 className="font-medium text-lg">{name}</h1>
         <button
-          disabled={!isAvailable}
-          onClick={() => setIsAvailable(false)}
+          onClick={() => handleVisitPokemonCity(name)}
           className="py-3 px-6 bg-pokemon rounded-full text-nowrap hover:opacity-80 disabled:opacity-70 disabled:cursor-not-allowed"
         >
           Visitar

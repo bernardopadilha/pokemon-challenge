@@ -58,9 +58,9 @@ export function Sidebar() {
 
         <button
           onClick={() => hasActiveSidebar ? setHasActiveSidebar(false) : setHasActiveSidebar(true)}
-          className='p-2 text-white rounded-full bgButton hover:opacity-80 duration-150'
+          className='p-2 md:p-3 text-white rounded-full bgButton hover:opacity-80 duration-150'
         >
-          <List size={28} />
+          <List size={32} />
         </button>
       )}
     </>

@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'hero': "url(/public/background_desktop.png)"
+        'hero': "url(/background_desktop.png)"
       },
       colors: {
         pokemon: "#FC2D39"

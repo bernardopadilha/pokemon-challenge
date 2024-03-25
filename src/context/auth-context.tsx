@@ -43,7 +43,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
 
         toast.success("Logado com sucesso");
 
-      }).catch((error) => {
+      }).catch(() => {
         toast.error("Você cancelou o método de login com o Google");
       });
   }
