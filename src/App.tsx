@@ -31,7 +31,7 @@ export function App() {
   return (
 
     <main className="max-w-[1440px] mx-auto h-full w-full flex flex-col items-center">
-      <div className="w-full h-[calc(100vh-150px)] flex flex-col pb-2 items-center justify-start bg-hero bg-no-repeat text-center bg-center bg-cover px-4 md:px-8 pt-4 md:pt-8">
+      <div className="w-full h-full flex flex-col pb-2 items-center justify-start bg-hero bg-no-repeat text-center bg-center bg-cover px-4 md:px-8 pt-4 md:pt-8">
         <Header />
 
         <div className="absolute top-4 md:top-6 right-4 md:right-8"><Sidebar /></div>
